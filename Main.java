@@ -3,21 +3,21 @@ class Main {
   public static void main(String[] args) {
   Scanner scan = new Scanner(System.in);
 
-  int total;
+  int total = 0;
 
-  int attendance; 
+  int attendance = 0; 
 
-  for (i = 0; i<8;i++){
-    system.out.println("how many fans attended game "+ (i + 1) + "?");
-    attendance = scan.next();
+  for (int i = 0; i < 8; i++){
+    System.out.println("how many fans attended game "+ (i + 1) + "?");
+    attendance = scan.nextInt();
     total = total + attendance;
   }
 
-  double average = total/8
+  double average = total/8;
 
   int averageRounded = (int) Math.round(average);
 
-   system.out.println("The Average cricket attendance is " +averageRounded+ " this year.")
+   System.out.println("The Average cricket attendance is " +averageRounded+ " this year.");
   
   }
 }
